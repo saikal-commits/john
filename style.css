@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "Heebo", sans-serif;
+  background: white;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+
+#header {
+  padding: 20px 0;
+}
+.header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.header a {
+  margin: 0 15px;
+  color: #000;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 500;
+}
+.header a:hover {
+  font-size: 17px;
+  color: blue;
+  text-decoration: underline;
+}
+
+/* бургер меню */
+
+.open {
+  display: flex !important;
+}
+.burger {
+  display: none;
+  position: relative;
+  z-index: 50;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 30px;
+  height: 18px;
+}
+
+.burger span {
+  height: 2px;
+  width: 80%;
+  transform: scale(1);
+  background-color: black;
+}
+
+.burger::before,
+.burger::before,
+.burger::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: black;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+
+/* добавляем класс active для анимации иконки бургера */
+
+.burger.active span {
+  transform: scale(0);
+}
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-50deg);
+  translate: (0, 50%);
+}
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(50deg);
+  translate: (0, 50%);
+}
+
+#hero {
+  padding: 150px 0;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-text h1 {
+  width: 506px;
+  color: #21243d;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.hero-text p {
+  margin: 40px 0 45px 0;
+  width: 497px;
+  color: #21243d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.hero-text button {
+  width: 208px;
+  height: 47px;
+  border-radius: 2px;
+  background: #ff6464;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#post {
+  padding: 50px 0;
+  background: #edf7fa;
+}
+.post {
+  height: 396px;
+}
+.post-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-nav h3 {
+  color: #21243d;
+  font-size: 22px;
+  font-weight: 400;
+}
+.post-nav a {
+  color: #00a8cc;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 400;
+}
+.post-block {
+  padding: 20px 0;
+  width: 418px;
+  height: 295px;
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(187, 225, 250, 0.25);
+}
+.post-block h1 {
+  margin: 13px 0 0 24px;
+  width: 374px;
+  color: #21243d;
+  font-size: 26px;
+  font-weight: 700;
+}
+.post-block-dat {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.post-block-dat h6 {
+  width: 374px;
+  color: #21243d;
+  font-size: 18px;
+  font-weight: 400;
+}
+.post-block-dat {
+  padding: 24px 24px 0 24px;
+}
+.post-block-dat img {
+  margin-right: 60px;
+}
+.post-block p {
+  margin: 24px 0 0 24px;
+  width: 368px;
+  color: #21243d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.post-blocks {
+  padding: 30px 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#works {
+  padding: 50px 0;
+}
+.work-blocks {
+  padding: 25px 0;
+}
+.wr-block {
+  display: flex;
+  align-items: center;
+}
+.wr-block-text {
+  margin-left: 20px;
+}
+.wr-dat {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+.wr-block-text h1 {
+  color: #21243d;
+  font-size: 30px;
+  font-weight: 700;
+}
+.wr-dat h5 {
+  width: 62px;
+  height: 25px;
+  border-radius: 16px;
+  background: #142850;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
+  margin-right: 30px;
+}
+.wr-dat p {
+  color: #8695a4;
+  font-size: 20px;
+  font-weight: 400;
+}
+.wr-block p {
+  width: 594px;
+  color: #21243d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#footer {
+  padding: 85px 0;
+}
+
+.foot-figurs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+.footer p {
+  color: #21243d;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 25px;
+}
