@@ -6,6 +6,13 @@
   width: 80%;
   margin: 0 auto;
 }
+.main-container {
+  width: 60%;
+  margin: 0 auto;
+}
+html {
+  scroll-behavior: smooth;
+}
 
 a {
   text-decoration: none;
@@ -21,6 +28,10 @@ button {
 
 #header {
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  backdrop-filter: blur(4px);
 }
 .header {
   display: flex;
@@ -61,8 +72,6 @@ button {
   transform: scale(1);
   background-color: black;
 }
-
-.burger::before,
 .burger::before,
 .burger::after {
   content: "";
@@ -172,6 +181,11 @@ button {
   align-items: center;
   justify-content: space-evenly;
 }
+.blog-block-dat {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
 .post-block-dat h6 {
   width: 374px;
   color: #21243d;
@@ -181,7 +195,49 @@ button {
 .post-block-dat {
   padding: 24px 24px 0 24px;
 }
+.blog-block-dat h6 {
+  width: 172px;
+  color: #21243d;
+  font-size: 18px;
+  font-weight: 400;
+}
+.work h2 {
+  width: 156px;
+  color: #21243d;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px; /* 136.364% */
+}
+#blog {
+  padding: 90px 0;
+}
+#work {
+  padding: 90px 0;
+}
+.blog-block-dat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 16px 0 16px -281px;
+}
 .post-block-dat img {
+  padding-right: 160px;
+}
+.blog h1 {
+  margin-bottom: 55px;
+  width: 156px;
+  color: #21243d;
+  font-size: 44px;
+  font-weight: 700;
+}
+.blog {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.blog-block-dat img {
   margin-right: 60px;
 }
 .post-block p {
@@ -192,6 +248,20 @@ button {
   font-weight: 400;
   line-height: normal;
 }
+.blog-title p {
+  width: 682px;
+  color: #21243d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.blog h4 {
+  color: #21243d;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: normal;
+}
+
 .post-blocks {
   padding: 30px 60px;
   display: flex;
@@ -203,7 +273,7 @@ button {
   padding: 50px 0;
 }
 .work-blocks {
-  padding: 25px 0;
+  padding: 35px 0;
 }
 .wr-block {
   display: flex;

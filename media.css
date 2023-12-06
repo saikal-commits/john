@@ -157,4 +157,51 @@
 @media (max-width: 376px) {
 }
 @media (max-width: 320px) {
+  /* #header{
+    display: none;
+  } */
+  .post-block {
+    width: 310px;
+    height: 267px;
+  }
+  .hero-text p {
+    width: 289px;
+  }
+  .post-block h1 {
+    width: 284px;
+  }
+  .post-block p {
+    width: 290px;
+    font-size: 14px;
+  }
+  .post-block h1 {
+    font-size: 25px;
+    width: 248px;
+  }
+  .foot-figurs {
+    gap: 21px;
+  }
+  .hero-text button {
+    width: 161px;
+    font-size: 15px;
+  }
+  .post-nav a {
+    display: none;
+  }
+  .wr-block img {
+    width: 303px;
+    height: 212px;
+  }
+  .wr-block-text {
+    margin-left: 121px;
+  }
+  .wr-block p {
+    font-size: 14px;
+  }
+  .post-nav h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }

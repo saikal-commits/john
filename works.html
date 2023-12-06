@@ -6,8 +6,6 @@
     <title>john</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./media.css" />
-    <link rel="stylesheet" href="./blog.html" />
-    <link rel="stylesheet" href="./works.html" />
     <link
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,900&display=swap"
       rel="stylesheet"
@@ -17,7 +15,8 @@
     <header id="header">
       <div class="container">
         <div class="header">
-          <a href="./works.html">Works</a>
+          <a href="index.html">Home</a>
+          <a href="#">Works</a>
           <a href="./blog.html">Blog</a>
           <a href="#">Contact</a>
         </div>
@@ -28,70 +27,11 @@
       </div>
     </header>
 
-    <section id="hero">
-      <div class="container">
-        <div class="hero">
-          <div class="hero-text">
-            <h1>Hi, I am John, Creative Technologist</h1>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
+    <section id="work">
+      <div class="main-container">
+        <div class="work">
+          <h2>Work</h2>
 
-            <button>Download Resume</button>
-          </div>
-
-          <img src="./img/hero img.png" alt="img" />
-        </div>
-      </div>
-    </section>
-
-    <section id="post">
-      <div class="container">
-        <div class="post">
-          <div class="post-nav">
-            <h3>Recent posts</h3>
-            <a href="#">View all</a>
-          </div>
-          <div class="post-blocks">
-            <div class="post-block">
-              <h1>Making a design system from scratch</h1>
-              <div class="post-block-dat">
-                <h6>12 Feb 2020</h6>
-                <img src="./img/Vector 1.png" alt="" />
-
-                <h6>Desing,Pattern</h6>
-              </div>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-            <div class="post-block">
-              <h1>Making a design system from scratch</h1>
-              <div class="post-block-dat">
-                <h6>12 Feb 2020</h6>
-                <img src="./img/Vector 1.png" alt="" />
-
-                <h6>Desing,Pattern</h6>
-              </div>
-              <p>
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="works">
-      <div class="container">
-        <div class="works">
-          <p>Featured works</p>
           <div class="work-blocks">
             <div class="wr-block">
               <img src="./img/wr img1.png" alt="img" />
@@ -149,6 +89,32 @@
               <img src="./img/wr img3.png" alt="img" />
               <div class="wr-block-text">
                 <h1>36 Days of Malayalam type</h1>
+                <div class="wr-dat">
+                  <h5>2018</h5>
+                  <p>Typography</p>
+                </div>
+                <p>
+                  Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                  amet sint. Velit officia consequat duis enim velit mollit.
+                  Exercitation veniam consequat sunt nostrud amet.
+                </p>
+              </div>
+            </div>
+            <div class="work-figure">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="858"
+                height="2"
+                viewBox="0 0 858 2"
+                fill="none"
+              >
+                <path d="M0 1L858 1.00008" stroke="#E0E0E0" />
+              </svg>
+            </div>
+            <div class="wr-block">
+              <img src="./img/wohhj img.png" alt="img" />
+              <div class="wr-block-text">
+                <h1>Components</h1>
                 <div class="wr-dat">
                   <h5>2018</h5>
                   <p>Typography</p>
@@ -241,12 +207,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      document.querySelector(".burger").addEventListener("click", function () {
-        this.classlist.toggle("active");
-        document.querySelector(".header").classList.toggle("open");
-      });
-    </script>
   </body>
 </html>
