@@ -196,7 +196,7 @@ button {
   padding: 24px 24px 0 24px;
 }
 .blog-block-dat h6 {
-  width: 172px;
+  width: 152px;
   color: #21243d;
   font-size: 18px;
   font-weight: 400;
@@ -218,10 +218,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 16px 0 16px -281px;
+  margin: 16px 0 16px -313px;
 }
 .post-block-dat img {
-  padding-right: 160px;
+  padding-right: 64px;
 }
 .blog h1 {
   margin-bottom: 55px;
